@@ -4,7 +4,7 @@ $trans-direct:                 250ms;
 @mixin animation-efect ($efect) {
     transition: $efect $trans-direct $timing-function;
 }
-
+// Header + Abimation
 header {
     // background-color: $header-base-color;
     background: linear-gradient(-45deg, #FFB8CA, #9F465B, #F6A7BB, #AF6678);
@@ -108,6 +108,7 @@ $bubble-count: 50;
       transform: translateX(-100%);
     }
   }
+
 
 .container--modicator{
     height: 502px;
@@ -301,6 +302,7 @@ $bubble-count: 50;
             border: none;
             padding: 0;
         }
+        
     }
 
     &--link {
@@ -316,7 +318,7 @@ $bubble-count: 50;
             transform: translateY(-2px);
             color: $accent-color;
         }
-        
+    
     }
 
     &--current{
@@ -432,6 +434,7 @@ $bubble-count: 50;
         color: $button-white-color;
         z-index: 10;
         margin-bottom: 19px;
+        cursor: default;
         
         @media screen and (min-width: $tablet){
             font-size: 22px;
@@ -798,6 +801,7 @@ $bubble-count: 50;
     color: $button-white-color;
     position: relative;
     
+    
     @media screen and (min-width: $tablet){
         margin-left: 0;
     }
@@ -807,7 +811,9 @@ $bubble-count: 50;
         font-size: 14px;
         line-height: 1.43; 
     }
-    
+    &__text {
+        cursor: default;
+    }
 }
 
 .button-big-eco {
@@ -830,8 +836,8 @@ $bubble-count: 50;
         border-radius: 50%;
         fill: $button-white-color;
         @media screen and (min-width: $desktop){
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             margin-top: -3px;
         }
     }
